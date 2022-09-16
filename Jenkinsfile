@@ -19,7 +19,7 @@ pipeline{
 	    sh './jenkins/scripts/test.sh'
 	  }
 	}
-	stage('Diliver for production') {
+	stage('Deploy for production') {
 	  when {
 	    branch 'production'
 	  }
